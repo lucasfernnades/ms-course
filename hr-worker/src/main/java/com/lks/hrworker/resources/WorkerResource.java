@@ -13,7 +13,7 @@ import com.lks.hrworker.entities.Worker;
 import com.lks.hrworker.repositories.WorkerRepository;
 
 @RestController
-@RequestMapping(value = "/workers")
+@RequestMapping("/workers")
 public class WorkerResource {
 
 	@Autowired
@@ -24,7 +24,7 @@ public class WorkerResource {
 		return ResponseEntity.ok(workerRepository.findAll());
 	}
 
-	@GetMapping(value = "/{id}")
+	@GetMapping("/{id}")
 	public ResponseEntity<Worker> findById(@PathVariable Long id) {
 		return ResponseEntity.ok(workerRepository.findById(id).get());
 	}
