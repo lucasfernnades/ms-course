@@ -12,10 +12,10 @@ public class Role implements Serializable {
 	public Role() {
 	}
 
-	public Role(Long id, String rleName) {
+	public Role(Long id, String roleName) {
 		super();
 		this.id = id;
-		this.roleName = rleName;
+		this.roleName = roleName;
 	}
 
 	public Long getId() {
@@ -26,12 +26,12 @@ public class Role implements Serializable {
 		this.id = id;
 	}
 
-	public String getRleName() {
+	public String getRoleName() {
 		return roleName;
 	}
 
-	public void setRleName(String rleName) {
-		this.roleName = rleName;
+	public void setRoleName(String roleName) {
+		this.roleName = roleName;
 	}
 
 	@Override
